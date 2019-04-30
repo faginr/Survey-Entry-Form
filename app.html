@@ -2,42 +2,39 @@
 <html>
 <head>
 	<title>Mock Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 </head>
 <body>
 	<h1 id="title">Survey Form</h1>
 	<div class="form-container">
-		<p id="description">This is a sample survey.</p>
 		<form id="survey-form">
-			<label for="Name">Name:
-			<input id="name" type="text" name="first-name" placeholder="First and Last Name" required="">
-			</label>
-			<label for="Name">Email:
-			<input id="email" type="email" name="email" placeholder="Enter Email Address" required="">
-			</label>
-			<label for="Name">Age:
-			<input id="number" type="number" name="age" placeholder="Years of Age" min="1" max="150" required="">
-			</label>
-			<label for="news-source">Main source of news:
-			<select id="dropdown">
+			<p id="description">This is a sample survey.</p>
+			<label class="left" for="Name">Name:</label>
+			<input class="right" id="name" type="text" name="first-name" placeholder="First and Last Name" required="">
+			<label class="left" for="Name">Email:</label>
+			<input class="right" id="email" type="email" name="email" placeholder="Enter Email Address" required="">		
+			<label class="left" for="Name">Age:</label>
+			<input class="right" id="number" type="number" name="age" placeholder="Years of Age" min="1" max="150" required="">	
+			<label class="left" for="news-source">Main source of news:</label>
+			<select class="right" id="dropdown">
 				<option>Facebook</option>
 				<option>NPR</option>
 				<option>CNN</option>
 			</select>
-			</label>
-			<label for="radio">How much time do you spend reading the news per week?
-				<input type="radio" name="hours" value ="2 hrs. or less">2 hrs. or less
-				<input type="radio" name="hours" value ="2-4 hrs.">2-4 hrs.
-				<input type="radio" name="hours" value ="More than 4hrs.">More than 4hrs.
-			</label>
-			<label for="polParty">Which parties do you pay attention to? Select all that apply.</label>
+			<label class="left" for="radio">How much time do you spend reading the news per week?</label>
+				<input class="right" type="radio" name="hours" value ="2 hrs. or less">2 hrs. or less
+				<input class="right" type="radio" name="hours" value ="2-4 hrs.">2-4 hrs.
+				<input class="right" type="radio" name="hours" value ="More than 4hrs.">More than 4hrs.
+			<label class="left" for="polParty">Which parties do you pay attention to? Select all that apply.</label>
 			<input type="checkbox" name="polParty" value="democratic">
-			<label for="democratic">Democratic</label>
+			<label class="left" for="democratic">Democratic</label>
 			<input type="checkbox" name="polParty" value="republican">
-			<label for="republican">Republican</label>
+			<label class="left" for="republican">Republican</label>
 			<input type="checkbox" name="polParty" value="independant">
-			<label for="independant">Independant</label>
-			<span>Any addtional comments?</span>
-			<textarea></textarea>
+			<label class="left" for="independant">Independant</label>
+			<span class="left">Any addtional comments?</span>
+			<textarea class="right"></textarea>
 			<button id="submit">Submit</button>
 		</form>
 	</div>
