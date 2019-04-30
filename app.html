@@ -10,22 +10,35 @@
 	<div class="form-container">
 		<form id="survey-form">
 			<p id="description">This is a sample survey.</p>
+			<div class="oneLine">
 			<label class="left" for="Name">Name:</label>
 			<input class="right" id="name" type="text" name="first-name" placeholder="First and Last Name" required="">
+			</div>
+			<div class="oneLine">
 			<label class="left" for="Name">Email:</label>
 			<input class="right" id="email" type="email" name="email" placeholder="Enter Email Address" required="">		
+			</div>
+			<div class="oneLine">
 			<label class="left" for="Name">Age:</label>
 			<input class="right" id="number" type="number" name="age" placeholder="Years of Age" min="1" max="150" required="">	
+			</div>
+			<div class="oneLine">
 			<label class="left" for="news-source">Main source of news:</label>
-			<select class="right" id="dropdown">
+			<div class="dropD">
+			<select id="dropdown">
 				<option>Facebook</option>
 				<option>NPR</option>
 				<option>CNN</option>
 			</select>
+			</div>
+			</div>
+			<div class="oneLine">
 			<label class="left" for="radio">How much time do you spend reading the news per week?</label>
 				<input class="right" type="radio" name="hours" value ="2 hrs. or less">2 hrs. or less
 				<input class="right" type="radio" name="hours" value ="2-4 hrs.">2-4 hrs.
 				<input class="right" type="radio" name="hours" value ="More than 4hrs.">More than 4hrs.
+			</div>
+			<div class="oneLine">
 			<label class="left" for="polParty">Which parties do you pay attention to? Select all that apply.</label>
 			<input type="checkbox" name="polParty" value="democratic">
 			<label class="left" for="democratic">Democratic</label>
@@ -33,8 +46,11 @@
 			<label class="left" for="republican">Republican</label>
 			<input type="checkbox" name="polParty" value="independant">
 			<label class="left" for="independant">Independant</label>
+			</div>
+			<div class="oneLine">
 			<span class="left">Any addtional comments?</span>
 			<textarea class="right"></textarea>
+			</div>
 			<button id="submit">Submit</button>
 		</form>
 	</div>
