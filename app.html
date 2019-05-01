@@ -6,53 +6,91 @@
 	 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 </head>
 <body>
+
 	<h1 id="title">Survey Form</h1>
-	<div class="form-container">
+		
 		<form id="survey-form">
-			<p id="description">This is a sample survey.</p>
+			<p id="description">Please tell us about your political views.</p>
+			
 			<div class="oneLine">
-			<label class="left" for="Name">Name:</label>
-			<input class="right" id="name" type="text" name="first-name" placeholder="First and Last Name" required="">
+				<div class="left">
+					<label for="name">Name:</label>
+				</div>
+				<div class="right">
+					<input id="name" type="text" name="first-name" placeholder="First and Last Name" required="">
+				</div>
 			</div>
+			
 			<div class="oneLine">
-			<label class="left" for="Name">Email:</label>
-			<input class="right" id="email" type="email" name="email" placeholder="Enter Email Address" required="">		
+				<div class="left">
+					<label for="email">Email:</label>
+				</div>
+				<div class="right">
+					<input id="email" type="email" name="email" placeholder="Enter Email Address" required="">
+				</div>		
 			</div>
+
 			<div class="oneLine">
-			<label class="left" for="Name">Age:</label>
-			<input class="right" id="number" type="number" name="age" placeholder="Years of Age" min="1" max="150" required="">	
+				<div class="left">
+					<label for="number">Age:</label>
+				</div>
+				<div class="right">
+				<input id="number" type="number" name="age" placeholder="Years of Age" min="1" max="150" required="">
+				</div>	
 			</div>
+
+
 			<div class="oneLine">
-			<label class="left" for="news-source">Main source of news:</label>
-			<div class="dropD">
-			<select id="dropdown">
-				<option>Facebook</option>
-				<option>NPR</option>
-				<option>CNN</option>
-			</select>
-			</div>
-			</div>
+				<div class="left">
+					<label class="left" for="news-source">Main source of news:</label>
+				</div>
+				<div class="right">
+					<select id="dropdown">
+						<option>Facebook</option>
+						<option>NPR</option>
+						<option>CNN</option>
+					</select>
+				</div>
+
 			<div class="oneLine">
-			<label class="left" for="radio">How much time do you spend reading the news per week?</label>
-				<input class="right" type="radio" name="hours" value ="2 hrs. or less">2 hrs. or less
-				<input class="right" type="radio" name="hours" value ="2-4 hrs.">2-4 hrs.
-				<input class="right" type="radio" name="hours" value ="More than 4hrs.">More than 4hrs.
-			</div>
+				<div class="left multiLabel">
+					<label for="radio">How much time do you spend reading the news per week?</label>
+				</div>
+				<ul class="right">
+					<li><input class="radio" type="radio" name="hours" value ="2 hrs. or less"> 2 hrs. or less</li>
+					<li><input class="radio" type="radio" name="hours" value ="2-4 hrs."> 2-4 hrs.</li>
+					<li><input class="radio" type="radio" name="hours" value ="More than 4hrs."> More than 4hrs.</li>
+				</ul>
+
 			<div class="oneLine">
-			<label class="left" for="polParty">Which parties do you pay attention to? Select all that apply.</label>
-			<input type="checkbox" name="polParty" value="democratic">
-			<label class="left" for="democratic">Democratic</label>
-			<input type="checkbox" name="polParty" value="republican">
-			<label class="left" for="republican">Republican</label>
-			<input type="checkbox" name="polParty" value="independant">
-			<label class="left" for="independant">Independant</label>
+				<div class="left">
+				<label for="polParty">Which parties do you pay attention to?<br><em> Select all that apply.</em></label>
+				</div>
+				
+				<ul class="right multiLabel">
+					<li>
+						<input type="checkbox" name="polParty" value="democratic">		
+						<label for="democratic">Democratic</label>	
+					</li>
+				
+					<li>
+						<input type="checkbox" name="polParty" value="republican">
+						<label for="republican">Republican</label>
+					</li>
+					<li>
+						<input type="checkbox" name="polParty" value="independant">
+						<label for="independant">Independant</label>					
+					</li>
+				</ul>
 			</div>
+
 			<div class="oneLine">
-			<span class="left">Any addtional comments?</span>
-			<textarea class="right"></textarea>
+				<span class="left multiLabel">Any addtional comments?</span>
+				<textarea class="right"></textarea>
 			</div>
-			<button id="submit">Submit</button>
-		</form>
-	</div>
+
+	<button id="submit">Submit</button>
+
+		</form>	
 </body>
-</html>
+</html>			
